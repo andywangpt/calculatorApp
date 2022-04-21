@@ -1,0 +1,6 @@
+.calculatorArea{
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
