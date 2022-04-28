@@ -2,5 +2,11 @@
     border: 5px solid black;
     display: flex;
     flex-direction: row;
+    background-color: black;
+    color: white;
 }
 
+.body {
+    background-color: black;
+    color: white;
+}

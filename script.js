@@ -6,7 +6,7 @@ let userInputStr = ''
 let userInputNum = 0
 let midOperation = false
 let operator = ''
-let calculatorStore = 0
+let calculatorStore = ''
 let calculatorStore2 = 0
 
 let multiply = false
@@ -18,7 +18,7 @@ const clearScreenButton = document.getElementById('AC').addEventListener('click'
  })
 const multiplyButton = document.getElementById('x').addEventListener('click', (e) => {
     e.preventDefault()
-    multiplyFunction(calculatorStore, userInputStr) 
+    multiplyFunction(userInputStr) 
 })
 const addButton = document.getElementById('+').addEventListener('click', (e) => {
     e.preventDefault()
@@ -38,44 +38,30 @@ for(i=0; i < numberButtons.length; i++) {
     })
 }
 
-//functions
-function displayNumber(number){
-    if(midOperation == false){
-        userInputStr = userInputStr.concat(number)   
-        display.innerText = userInputStr
-    }
-    if(midOperation == true) {
-        clearScreen()
-        userInputStr = userInputStr.concat(number)
-        display.innerText = userInputStr
-    }
-}    
+
 function clearScreen(){
     userInputStr = ''
     display.innerText = userInputStr
 }
 
-function multiplyFunction(calculatorStore, userInputStr){
+function multiplyFunction(userInputStr){
     if(midOperation == false && operator == ''){
         calculatorStore = userInputStr
-        console.log('calcStore ', calculatorStore, 'userinputstr', userInputStr)
+        console.log('calculatorStore ', calculatorStore, 'userinputstr', userInputStr)
         midOperation = true
         operator = 'multiply'
         return
     }
-    completeOperation()
-    /*
-    //completeOperation(calculatorStore, userInputStr)
+
     if(operator == 'multiply') {
         userInputNum = Math.floor(userInputStr)
-        //clearScreen()
+        clearScreen()
         console.log(calculatorStore)
         calculatorStore = (userInputNum * calculatorStore)
         display.innerText = calculatorStore 
-        console.log('66', userInputNum, calculatorStore)
         return
     }
-    
+    /*
     if(operator !='multiply'){
         completeOperation(calculatorStore, userInputStr)
     }
