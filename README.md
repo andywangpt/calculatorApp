@@ -3,7 +3,7 @@ A simple calculator app
 
 A simple calculator written in Javascript, HTML, and CSS.
 
-Try it out <a href=https://andywangpt.github.io/expenseTracker>here</a>.
+Try it out <a href=https://andywangpt.github.io/calculatorApp>here</a>.
 
 <img width="400" alt="Screen Shot 2022-04-28 at 1 48 41 PM" src="https://user-images.githubusercontent.com/95507674/165843099-6038dae2-1325-44c1-aa7e-60d417bda734.png">
 
