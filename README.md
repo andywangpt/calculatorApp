@@ -1,7 +1,5 @@
 # Calculator App
 A simple calculator app
-# expenseTracker
-An Expense Tracker
 
 A simple calculator written in Javascript, HTML, and CSS.
 
