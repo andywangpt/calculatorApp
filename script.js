@@ -39,10 +39,7 @@ for(i=0; i < numberButtons.length; i++) {
 }
 
 
-function clearScreen(){
-    userInputStr = ''
-    display.innerText = userInputStr
-}
+
 
 function multiplyFunction(userInputStr){
     if(midOperation == false && operator == ''){
