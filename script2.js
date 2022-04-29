@@ -15,9 +15,10 @@ const operatorButtons = document.getElementsByClassName('calculatorOperators')
 for(j=0; j < operatorButtons.length; j++) {
     operatorButtons[j].addEventListener('click', (e) => {
             operator = e.target.value
-            if(operator == 'AC'){
+            if(operator == 'C'){
                 secondNumber = ''
                 firstNumber = ''
+                operator = ''
                 display.textContent = '0'
                 return
             }
